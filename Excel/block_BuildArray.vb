@@ -1,6 +1,6 @@
 ''' Block: Build String Array Start '''
 ' Description: Use this block of code to build an array from the values in the column of a structured table.
-' Commit date: 2021-02-05
+' Commit date: 2021-02-07
 
 'Declare variables
 Dim GenArray() As String '<- adjust the name of the array as necessary

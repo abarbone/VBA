@@ -1,6 +1,6 @@
 ''' Block: Build String Array with Criteria Start '''
 ' Description: Use this block of code to build an array from the values in the column of a structured table based on some critera.
-' Commit date: 2021-02-05
+' Commit date: 2021-02-07
 
 Dim GenArray() As String '<- adjust the name of the array as necessary
 Dim NameOfTable As String

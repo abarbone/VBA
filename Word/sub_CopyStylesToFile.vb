@@ -1,11 +1,11 @@
 Sub CopyStylesToFile(SourceFile As String, DestinationFile As String)
-' This sub routine copies all Styles from one file into another file.
-' Note that when Styles are imported, the properties of any Styles of the same name within the
-' target file will be overwritten to match the properties in the source file. This behavior is
-' helpful if you need to update or restore Styles from a central source file.
-' Commit date: 2021-02-07
+    ' This sub routine copies all Styles from one file into another file.
+    ' Note that when Styles are imported, the properties of any Styles of the same name within the
+    ' target file will be overwritten to match the properties in the source file. This behavior is
+    ' helpful if you need to update or restore Styles from a central source file.
+    ' Commit date: 2021-02-07
 
-'0.0. Setup.
+    '0.0. Setup.
 
     '0.1. Set error behavior.
 
@@ -20,7 +20,7 @@ Sub CopyStylesToFile(SourceFile As String, DestinationFile As String)
     ErrorMessage = ""
     nerr = 0
 
-'1.0. Check input.
+    '1.0. Check input.
 
     '1.1. Check that the Source file path can be found.
     If Dir(SourceFile) = "" Then
@@ -54,7 +54,7 @@ Sub CopyStylesToFile(SourceFile As String, DestinationFile As String)
         ErrorMessage = "An unknown error has occurred."
     End If
 
-'2.0. Copy Styles from Source File to Destination File.
+    '2.0. Copy Styles from Source File to Destination File.
 
     '2.1. Open Destination file.
     'Note: This document should automatically become the Active Document.
@@ -66,12 +66,12 @@ Sub CopyStylesToFile(SourceFile As String, DestinationFile As String)
     '2.3. Save and Close Destination File.
     ActiveDocument.Close SaveChanges:=wdSaveChanges
 
-'3.0. Close out.
+    '3.0. Close out.
 
-Exit Sub
+    Exit Sub
 
 ErrorCatch:
-MsgBox ErrorMessage, vbCritical, "An Error has Occurred"
-End
+    MsgBox ErrorMessage, vbCritical, "An Error has Occurred"
+    End
 
 End Sub
