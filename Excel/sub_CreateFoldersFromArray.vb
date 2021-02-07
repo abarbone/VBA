@@ -19,6 +19,7 @@ Sub CreateFoldersFromArray(ByRef FolderArray() As String)
     'Not used.
 
 '2.0. Loop through array
+
     For i = LBound(FolderArray) To UBound(FolderArray)
     
         ' Check that the Parent Folder can be created.
