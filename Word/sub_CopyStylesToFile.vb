@@ -1,5 +1,5 @@
 Sub CopyStylesToFile(SourceFile As String, DestinationFile As String)
-' This sub routine copies all Styles from one file into another file.
+' This subroutine copies all Styles from one file into another file.
 ' Note that when Styles are imported, the properties of any Styles of the same name within the
 ' target file will be overwritten to match the properties in the source file. This behavior is
 ' helpful if you need to update or restore Styles from a central source file.
