@@ -22,7 +22,7 @@ Sub CreateFoldersFromArray(ByRef FolderArray() As String)
 
     For i = LBound(FolderArray) To UBound(FolderArray)
     
-        ' Check that the Parent Folder can be created.
+        ' Check that the Parent Folder can be found.
         Parent = ParentFolder(FolderArray(i))
         If Dir(Parent, vbDirectory) = "" Then
             ErrorMessage = "Cannot find parent folder: " & Parent _
