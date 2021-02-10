@@ -1,7 +1,7 @@
     ''' Block Start '''
     ' Name: BuildArray
     ' Description: Use this block of code to build an array from the values in the column of a structured table.
-    ' Commit date: 2021-02-90
+    ' Commit date: 2021-02-09
 
     'Declare variables
     Dim GenArray() As String '<- adjust the name of the array as necessary
