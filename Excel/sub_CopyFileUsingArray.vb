@@ -1,8 +1,8 @@
 Sub CopyFileUsingArray(ByRef DestFolderArray() As String, SourceParentFolder As String, SourceFileName As String, Optional Prefix As String = "")
-' Copies a file from a single location into the folders specified in a 1 dimensional array of folder paths.
-' Commit date: 2021-02-07
+    ' Copies a file from a single location into the folders specified in a 1 dimensional array of folder paths.
+    ' Commit date: 2021-02-07
 
-'0.0.0. Setup.
+    '0.0.0. Setup.
 
     '0.1.0. Set error behavior.
 
@@ -30,7 +30,7 @@ Sub CopyFileUsingArray(ByRef DestFolderArray() As String, SourceParentFolder As 
             SourceFullPath = SourceParentFolder & "\" & SourceFileName
         End If
 
-'1.0.0. Check inputs.
+    '1.0.0. Check inputs.
 
     '1.1.0. Check if source file can be found.
 
@@ -40,7 +40,7 @@ Sub CopyFileUsingArray(ByRef DestFolderArray() As String, SourceParentFolder As 
         GoTo ErrorCatch
     End If
 
-'2.0.0. Copy files.
+    '2.0.0. Copy files.
 
     ' Loop through array
     For i = LBound(DestFolderArray) To UBound(DestFolderArray)
@@ -66,12 +66,12 @@ Sub CopyFileUsingArray(ByRef DestFolderArray() As String, SourceParentFolder As 
     
     Next i
 
-'3.0.0. Close out.
+    '3.0.0. Close out.
 
-Exit Sub
+    Exit Sub
 
 ErrorCatch:
-MsgBox ErrorMessage, vbCritical, "An Error has Occurred"
-End
+    MsgBox ErrorMessage, vbCritical, "An Error has Occurred"
+    End
 
 End Sub

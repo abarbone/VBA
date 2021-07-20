@@ -1,8 +1,8 @@
 Sub CreateFoldersFromArray(ByRef FolderArray() As String)
-' Creates folders based on a 1 dimensional array of folder paths.
-' Commit date: 2021-02-07
+    ' Creates folders based on a 1 dimensional array of folder paths.
+    ' Commit date: 2021-02-07
 
-'0.0. Setup.
+    '0.0. Setup.
 
     '0.1. Set error behavior.
 
@@ -14,11 +14,11 @@ Sub CreateFoldersFromArray(ByRef FolderArray() As String)
     Dim i As Long
     Dim Parent As String
 
-'1.0. Check inputs.
+    '1.0. Check inputs.
 
     'Not used.
 
-'2.0. Loop through array
+    '2.0. Loop through array
 
     For i = LBound(FolderArray) To UBound(FolderArray)
     
@@ -37,12 +37,12 @@ Sub CreateFoldersFromArray(ByRef FolderArray() As String)
 
     Next i
 
-'3.0. Close out.
+    '3.0. Close out.
 
-Exit Sub
+    Exit Sub
 
 ErrorCatch:
-MsgBox ErrorMessage, vbCritical, "An Error has Occurred"
-End
+    MsgBox ErrorMessage, vbCritical, "An Error has Occurred"
+    End
 
 End Sub
